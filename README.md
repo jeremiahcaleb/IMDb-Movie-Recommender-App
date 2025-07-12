@@ -41,7 +41,8 @@ pip install -r requirements.txt
 Run the training script to process the dataset and generate the recommendation model.
 
 ```bash
-python model_training/train.py
+cd model_training
+python train.py
 ```
 
 This will generate `imdb_recommender.pkl` inside the `model_training/` folder.
