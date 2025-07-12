@@ -13,7 +13,7 @@ A content-based movie recommender system using TF-IDF and cosine similarity on I
 
 ```
 
-imdb-recommender/
+IMDb-Movie-Recommender-App/
 ├── model_training/
 │   ├── dataset.csv          # Raw IMDb dataset
 │   └── train.py             # Model training script
@@ -30,30 +30,30 @@ imdb-recommender/
 
 ## ⚙️ Setup & Run Instructions
 
-### 1. Install dependencies
+### 1. Clone the Repository
+
+First, clone the repository to your local machine:
+
+```bash
+git clone https://github.com/jeremiahcaleb/IMDb-Movie-Recommender-App.git
+cd IMDb-Movie-Recommender-App
+```
+
+### 2. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ````
 
-### 2. Train the model
+### 3. Train the model
 
 Run the training script to process the dataset and generate the recommendation model.
 
 ```bash
-cd model_training
-python train.py
+python model_training\train.py
 ```
 
-This will generate `imdb_recommender.pkl` inside the `model_training/` folder.
-
-### 3. Move the model file
-
-Move the saved model file to the main project directory:
-
-```bash
-mv model_training/imdb_recommender.pkl .
-```
+This will generate `imdb_recommender.pkl` inside the folder.
 
 ### 4. Add your ngrok auth token
 
