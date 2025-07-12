@@ -109,7 +109,6 @@ def process_imdb(filepath):
     print("✅ Model and data saved as imdb_recommender.pkl")
     return data
 
-# Run script
 if __name__ == "__main__":
-    dataset = "dataset.csv"  # Update path as needed
+    dataset = "model_training/dataset.csv"  # Update path as needed
     processed_data = process_imdb(dataset)
